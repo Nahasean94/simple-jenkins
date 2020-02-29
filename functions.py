@@ -19,14 +19,15 @@ def add_multiple_values(*args):
 
     return sum_
 
-def get_full_name(firstname, lastname):
-    """ Return the full name in the format firstname, lastname
+def get_full_name(surname,firstname, lastname):
+    """ Return the full name in the format surname, firstname, lastname
 
     Arguments:
+    surname: Surname e.g Njoroge
     firstname: First name e.g. John
     lastname: Last name e.g. Doe
     """
-    return lastname + ", " + firstname
+    return surname + ", "+ lastname + ", " + firstname
 
 def main():
     add_multiple_values(1,2,3,4,5)
